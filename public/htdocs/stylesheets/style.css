@@ -1,6 +1,9 @@
-.container { width: 960px; margin: 0 auto; display:block; }
+		.container { width: 960px; margin: 0 auto; display:block; }
 		.row { display: block; }
 		.row .col { display:inline-block; vertical-align: top; }
+		
+		
+		.hr_tear { position: absolute; width:100%; z-index: -1; background: none; height: 760px; background-image:url(/images/cif/gradbg.png); background-repeat:repeat-x; margin-top: -15px; }
 		
 		body {	background: #e4c7b0; background-image: url(../images/cif/texturebg.jpg); font-family: sans-serif; }
 		
@@ -93,7 +96,8 @@
 		#superfooter .container a { color:white; }
 		#superfooter #legals { width: 250px; }
 		#superfooter h3 {  color:white; margin-bottom: 0; }
-		#superfooter #madewith { margin-top: 45px; margin-left: 400px; }
+		#superfooter #quicklinks { margin-top: 45px; margin-left: 300px; }
+		#superfooter #madewith { margin-top: 45px; margin-left: 60px; }
 		
 		#homepage .tweet li { list-style:none; }
 		#homepage .tweet { margin-bottom: 30px; }
