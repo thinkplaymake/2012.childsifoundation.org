@@ -98,6 +98,17 @@
 				
 			</div>
 			
+			<div class="finally">
+			
+				<div class="col">
+					<h4>Other methods of giving</h4>
+					<p>If you're a corporate entity and would like to support Child's i Foundation, please read more about <a href="http://www.childsifoundation.org/give/corporate-support/">Corporate Support</a></p>
+					<p>If you'd like to donate offline, you can send us a cheque or bank transfer. <a href="http://www.childsifoundation.org/give/via-bank/">Find out how here</a>.</p>
+					
+				</div>
+				
+			</div>
+			
 			
 			
 			
