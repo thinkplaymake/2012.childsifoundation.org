@@ -5,23 +5,8 @@
 		<title>Help abandoned children by donating to Child's i Foundation</title>
 		<meta name="description" content="You can make a difference to abandoned children's lives by giving just £5 a month" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-		<style>
-			
-			#page { width: 960px; margin: 0 auto; }
-			#jgsdi { border: 1px solid black; padding: 30px; font-size: 200%; }
-			#jgsdi .footnote { font-size: 40%; }
-			
-			.col { display:inline-block; vertical-align:top; }
-			#jgsdi input, #jgsdi select { font-size: 150%; }
-			#jgsdi .amount input { width: 150px; }
-			.cannotgive .col { width: 30%; margin-right: 15px; }
-			.cannotgive p { height: 85px; }
-			.donationvalue .col { width: 48%; margin-right: 15px; }
-			.donationvalue h3 { font-size: 200%; }
-			.donationvalue { margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px #333 solid; }
-			
-		</style>
-		
+		<script src="javascripts/give.js"></script>
+		<link rel="stylesheet" href="stylesheets/give.css">
 	</head>
 	<body>
 	
@@ -96,18 +81,19 @@
 			
 				<div class="time col">
 					<h4>If you cannot give money..</h4>
-					<p>Give time... Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-					<p><a href="#" class="button">Something</a></p>
+					<p>You can help raise money for Childs i Foundation by giving time. You can help us through fundraising: hold an event, run a marathon, bake a cake.<br/>
+					Or you can get involved in our community of people who give their skills. Find out how you can Get Involved in Child's i Foundation.</p>
+					<p><a href="http://getinvolved.childsifoundation.org" class="button">&rarr; Get Involved</a></p>
 				</div>
 				<div class="love col">
 					<h4>If you cannot give time..</h4>
-					<p>Give love... Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-					<p><a href="#" class="button">Something</a></p>
+					<p>.. you can help us by giving love.<br/>Tell your friends and network about what we do, and why its so important. Spread the word and share our message through your social channels.</p>
+					<p><a href="#" class="button">&rarr; Share</a></p>
 				</div>
 				<div class="wheremoneygoes col">
-					<h4>See exactly where your money goes</h4>
+					<h4>Find out exactly where your money goes</h4>
 					<p></p>
-					<p><a href="#" class="button">Something</a></p>
+					<p><a href="#" class="button">&rarr; Something</a></p>
 				</div>
 				
 			</div>
@@ -119,90 +105,6 @@
 	
 	
 	
-		<script>
-		
-			var donate_frequency = 'single';
-			var donate_amount = 25;
-			var recommend_amount = 4;
-			var jgid = 185222;
-			
-			
-			$(document).ready( function(){
-				// init
-				
-				update_frequency();
-				update_amount();
-				
-				$("#jgsdi select").change(function() { 
-					donate_frequency = $(this).val();
-					update_frequency();
-				});
-				
-				$("#jgsdi input[name=amount]").change(function() { 
-					donate_amount = $(this).val();
-					update_amount();
-				});
-				
-				$('.upgrade.monthly .button.action').click( function(e) {
-					e.preventDefault();
-					donate_amount += 2;
-					update_amount();
-					
-					orig_text = $(this).text();
-					setTimeout( "$('.upgrade.monthly .button.action').text( orig_text )", 3000 );
-					$(this).text('Thank you!');
-					
-				} );
-				
-				$('.upgrade.single .button.action').click( function(e) {
-					e.preventDefault();
-					donate_amount = recommend_amount;
-					donate_frequency = 'monthly';
-					update_amount();
-					update_frequency();
-					
-				} );
-				
-			} );
-			
-			function update_frequency(){
-				$('.couldbe_worth .upgrade').hide();
-				if (donate_frequency == 'monthly') $('.is_worth .frequency').text( 'a month' );
-				if (donate_frequency == 'single') $('.is_worth .frequency').text( 'donation' );
-				
-				$("#jgsdi select[name=frequency]").val( donate_frequency );
-				$('.couldbe_worth .' + donate_frequency).show();
-			}
-			
-			function update_amount() {
-				if (parseInt(donate_amount)!=donate_amount) {
-					if (donate_frequency == 'monthly') donate_amount = 5;
-					if (donate_frequency == 'single') donate_amount = 25;
-				}
-				if (donate_amount<1) {
-					if (donate_frequency == 'monthly') donate_amount = 5;
-					if (donate_frequency == 'single') donate_amount = 25;
-				}
-				$("#jgsdi input[name=amount]").val( donate_amount );
-				$(".donationvalue .is_worth span.amount").text( donate_amount );
-				
-				
-				if (donate_frequency == 'single') {
-					recommend_amount = Math.ceil(donate_amount/10);
-					if (recommend_amount<4) recommend_amount = 4;
-					$('.couldbe_worth span.amount').text( recommend_amount );
-				}
-				
-				// calculate spans
-				$('.donationvalue .is_worth span.nurse').text( donate_amount * 0.5 );
-				$('.donationvalue .is_worth span.electricity').text( donate_amount * 4 );
-				$('.donationvalue .is_worth span.vaccs').text( donate_amount * 3 );
-				$('.donationvalue .is_worth span.tea').text( donate_amount * 5 );
-				
-			}
-						
-			
-		</script>
 	
 	</body>
 	

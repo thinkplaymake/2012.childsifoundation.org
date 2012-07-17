@@ -1,0 +1,15 @@
+			#page { width: 960px; margin: 0 auto; }
+			.nav  ul { margin:0 ;}
+			#jgsdi { border: 1px solid black; padding: 30px; font-size: 200%; }
+			#jgsdi .footnote { font-size: 40%; }
+			.col { display:inline-block; vertical-align:top; }
+			#jgsdi input, #jgsdi select { font-size: 150%; }
+			#jgsdi .amount input { width: 150px; }
+			.cannotgive .col { width: 30%; margin-right: 15px; }
+			.cannotgive p { height: 125px; }
+			.donationvalue .col { width: 48%; margin-right: 15px; }
+			.donationvalue h3 { font-size: 200%; }
+			.donationvalue { margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px #333 solid; }
+			
+			.wheremoneygoes h4 { font-size: 220%; font-weight: normal; margin: 0; margin-top: 15px; }
+			.wheremoneygoes > p { height: 35px; }
