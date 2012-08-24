@@ -6,69 +6,15 @@
 	<body>
 	
 		
-		<style>
-			/** BASE **/
-			html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+		<link rel="stylesheet" href="stylesheets/2/base.css">
+		<link rel="stylesheet" href="stylesheets/2/layout.css">
+		<link rel="stylesheet" href="stylesheets/2/styles.css">
+		<link rel="stylesheet" href="stylesheets/2/components.css">
 		
-			/** LAYOUT **/
-			.page { width: 900px; margin: 0 auto; padding-left: 30px; padding-right: 30px; }
-			
-			.row { margin-bottom: 30px; }
-			.row.unspaced { margin-bottom: 0; }
-			
-			.col { display: inline-block; width: 175px; vertical-align: top; }
-			.col.w1 { width: 175px; }
-			.col.w2 { width: 355px; }
-			.col.w3 { width: 535px; }
-			.col.w4 { width: 715px; }
-			.col.w5 { width: 900px; }
-			
-			
-			
-			/** STYLES **/
-			body { font-family: sans-serif; font-size: 0.9em; color: #444; }
-			a { font-weight: bold; color: #222; text-decoration: none; border-bottom:1px dotted; }
-			strong { font-weight: bold; }
-			em { font-weight: bold; color: #CF6517; }
-			h1 { font-size: 250%; margin-bottom: 30px; }
-			h2 { font-size: 180%; margin-bottom: 20px; }
-			h3 { font-size: 120%; font-weight: bold; }
-			h4 { font-size: 100%; text-transform: uppercase; }
-			h5 { font-size: 80%; text-transform: uppercase; }
-			.hide { display:none; }
-			
-			
-			@font-face {
-			font-family: 'funktion';
-			src: url('fonts/Funktion.otf');
-			font-weight: normal;
-			font-style: normal; }
-			
-			.headline { font-family: 'funktion'; font-size: 250%; text-align: center; }
-			.headline em { font-weight: normal; font-size: 125%; }
-			
-			
-			/** COMPONENTS **/
-			.ctabutton { min-height: 35px; display:block; background:#CF6517; padding:3px; padding-left: 6px; padding-right: 6px; font-size: 75%; color: white; text-transform:uppercase; background-image: url(http://www.childsifoundation.org/images/cif/icon_ctabutton.png); background-repeat: no-repeat; background-position: right 5px; text-decoration:none; margin-bottom: 5px; }
-			.ctabutton span { font-size: 150%; font-weight: bold; display: block; padding-right: 60px; text-transform:none; }
-			.ctabutton.oneline span { padding-top: 8px; }
-			.ctabutton.twoline {  }
-			
-			
-			.sprite.cif { display:block; background-image:url(http://www.childsifoundation.org/images/cif/childsi.png); width: 221px; height: 55px; }
-			a.sprite { border: none; }
-			
-			h3.block { color: white; padding: 9px; padding-right: 30px; margin-bottom: 5px;  }
-			h3.block.money { background: #09F; background-image:url(http://www.childsifoundation.org/images/cif/icon_givemoney.png); background-repeat:no-repeat;background-position:right;  }
-			h3.block.time { background: #0C6; background-image:url(http://www.childsifoundation.org/images/cif/icon_givetime.png); background-repeat:no-repeat;background-position:right; }
-			h3.block.love { background: #F39; background-image:url(http://www.childsifoundation.org/images/cif/icon_givelove.png);background-repeat:no-repeat;background-position:right;}
-			
-			
-			
+		<style>
 			/** PAGE RULES **/
 			.page { margin-top: 60px; }
 			.sectionrule { border-bottom: 1px solid black; margin-bottom: 30px; padding-bottom: 15px; margin-top: 60px; }
-			
 		</style>
 		
 		<div class="page">
@@ -82,6 +28,14 @@
 				</div>
 			</div>
 		
+			<div class="row spaced">
+				<div class="col w3">
+					<p>This page aims to provide detail on the standard HTML components and layouts used to build pages for the <em>childsifoundation.org</em> sites</p>
+					<p>It is meant to act as a shared and ongoing document to ease the creation of pages</p>
+				</div>
+			</div>
+		
+			
 			
 			
 			<h2 class="sectionrule">1. Grid system</h2>
@@ -95,12 +49,21 @@
 			</div>
 			
 			<div class="row">
-				<div class="col w2">You can also span columns by using .w2 .w3 .w4 applied to .col divs</div>
+				<div class="col w2">You can also span columns by using .w2 .w3 .w4 .25 applied to .col divs</div>
 				<div class="col w3">The cols should always add up to five though. But they don't have to.</div>
 			</div>
 			
-			<div class="row spaced">
+			<div class="row">
 				<div class="col">Each .row has a 15px bottom margin, which you can remove using .unspaced</div>
+			</div>
+			
+			<div class="row">
+				<div class="col w5">
+					<h4>Example Grid HTML</h4>
+				
+					<script src="https://gist.github.com/3188274.js"></script>
+				
+				</div>
 			</div>
 			
 			
@@ -111,14 +74,18 @@
 			
 				<h3>2.1 Headings</h3>
 			
-				<div class="col w3">
-					<h1 style="margin-top: 30px;">Heading 1 is used for main titles</h1>
+				<div class="col w5">
+					<h1>Heading 1 is used for main titles</h1>
 					<h2>heading 2 is for multiple headings</h2>
 					<h3>heading 3 can be used for boxes</h3>
 					<h4>heading 4 will usually be inline</h4>
 					<h5>heading 5 is probably for small inline headings, footers and captions</h5>
 				</div>
 				
+			</div>
+
+			<div class="row">
+				<h3>2.2 Heading Bars</h3>
 				
 				<div class="col w2">
 					<h3 class="block money">Heading bar for money (TBC)</h3>
@@ -126,11 +93,14 @@
 					<h3 class="block love">Heading bar for love</h3>
 				</div>
 				
-			
+				<div class="col w3">
+					<script src="https://gist.github.com/3188304.js"> </script>
+				</div>
+				
 			</div>
 			
 			<div class="row">
-			
+
 				<h3>2.2 Body Copy</h3>
 			
 				<div class="col w2">

@@ -1,0 +1,87 @@
+			html { background-image: url(http://www.childsifoundation.org/images/cif/texturebg.jpg); }
+			.superheaderdonate a { display:block;
+				margin-left: 100px; width: 200px;
+				color: white;
+				padding: 15px;
+				background: #CF6517;
+				background-image: url(http://www.childsifoundation.org/images/cif/icon_love.png);
+				background-repeat: no-repeat;
+				background-position: 95%;
+			}
+			
+			.rip { position: absolute; left: 0; width:100%; margin-top: -285px; z-index: -1; background: none; height: 760px; background-image:url(http://www.childsifoundation.org/images/cif/gradbottom.png); background-repeat:repeat-x; }
+			
+			
+			
+			#pollyistwo { margin-top: 60px; }
+			#pollyistwo .headline { text-align: left; margin-top: 75px; font-size: 350%; }
+			#pollyistwo .w2 { text-align: center; }
+			
+			#notorphan { margin-top: 30px; }
+			#notorphan .rip { background-image:url(http://www.childsifoundation.org/images/cif/gradbg.png); margin-top: -45px; }
+			#notorphan .copy { width: 270px; margin-left: 250px; }
+			
+			#eightypercent { background-image: url( http://www.childsifoundation.org/images/cif/section1-image2.png); background-repeat: no-repeat; }
+			#eightypercent .w2 .copy { margin-top: 250px; padding-right: 30px; padding-left: 20px; }
+			#eightypercent .w3 .headline { margin-top: 150px;  } 
+			#eightypercent .w3 .headline em { font-size: 150%;  } 
+			
+			#approach .image { margin-left: -30px; margin-top: 45px; margin-bottom: 45px; }
+			#approach .copy { margin-top: 90px; }
+			#approach .copy p { margin-bottom: 30px;  }
+			
+			#longterm .headline em { font-size: 200%; }
+			#longterm .image { position: absolute; margin-top: -120px; margin-left: -60px; }
+			#longterm .copy { margin-top: 450px;  }
+			#longterm .copy p { height: 100px; font-size: 120%; text-align:center; margin-left: 15px; margin-right: 15px; }
+			
+			#support { margin-top: 45px; }
+			#support .copy { margin-top: 15px; }
+			
+			#giveboxen p { height: 120px; }
+			#giveboxen a { font-size: 200%; font-weight: normal; }
+			
+			
+			
+			#giveboxen .headline.money { color: #09F;  }
+			#giveboxen .headline.time { color: #0C6; }
+			#giveboxen .headline.love { color: #F39; }
+			
+			.socials .col { width: 45px; }
+			.socials .col a { display:block; height: 45px; font-size: 80%; text-decoration:none; border: 0;  background-image:url(../../images/cif/socialshares.png); }
+			.socials .col a span { display:none; position: absolute; width: 150px; font-size: 50%; }
+			.socials .twitter  a{ background-position: 0px 0px; }
+			.socials .facebook a { background-position: -45px 0px; }
+			.socials .email a{ background-position: -90px 0px; }
+			
+			#giveboxen .socials .twitter a:hover span { display: block; margin-left: 100px; padding-top: 15px; }
+			#giveboxen .socials .facebook a:hover span { display: block; margin-left: 150px; padding-top: 15px; }
+			#giveboxen .socials .email a:hover span { display: block; margin-left: 50px; padding-top: 15px; }
+			
+			
+			#nowyouknow { text-align: center; margin-top: 150px; }
+			#nowyouknow .sprite.cif { margin-left: 350px; margin-bottom: 45px; }
+			#nowyouknow .headline { font-size: 150%; }
+			
+			
+			#updates { margin-top: 30px; }
+			#updates #nav .logo, .menu { display:inline-block; vertical-align:bottom; }
+			#updates #nav .logo  { margin-right: 135px; }
+			
+			#updates #nav .menu ul li  {display:inline-block;}
+			#updates #nav .menu ul li a  {display:block; background:#695836; padding: 5px; padding-top: 15px; padding-bottom: 15px; color:white; width: 120px; }
+			#updates #nav .menu a.donate { background:#CF6517; background-image:url(http://www.childsifoundation.org/images/cif/icon_love.png); background-repeat:no-repeat; background-position: 95%; }
+			#updates #nav { margin-bottom: 45px; }
+			
+			
+			.post .meta { margin-top: -10px; margin-bottom: 15px; }
+			.post .featimage { background-size: cover; height: 450px; margin-bottom: 15px; }
+			
+			#mc_embed_signup #mce-EMAIL  { padding: 5px; font-size: 120%; width: 95%; }
+			#mc_embed_signup .button  { background: #CF6517; border-radius: 5px; color: white; padding: 5px; width: 100%; margin-top: 5px;  }
+			#mc_embed_signup .button:hover { cursor:pointer; }
+			
+			.sidebarbox .socials h5 span { display: block; font-size: 130%; margin-left: 60px; padding-top: 15px; color:#695836; }
+			#twitter_update_list span { display:block; }
+			
+			

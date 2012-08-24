@@ -1,0 +1,23 @@
+
+/** COMPONENTS **/
+.ctabutton { min-height: 35px; display:block; background:#CF6517; padding:3px; padding-left: 6px; padding-right: 6px; font-size: 75%; color: white; text-transform:uppercase; background-image: url(http://www.childsifoundation.org/images/cif/icon_ctabutton.png); background-repeat: no-repeat; background-position: right 5px; text-decoration:none; margin-bottom: 5px; }
+.ctabutton span { font-size: 150%; font-weight: bold; display: block; padding-right: 60px; text-transform:none; }
+.ctabutton.oneline span { padding-top: 8px; }
+.ctabutton.twoline {  }
+.ctabutton:hover { color: #222; }
+
+
+.sprite.cif { display:block; background-image:url(http://www.childsifoundation.org/images/cif/childsi.png); width: 221px; height: 55px; }
+a.sprite { border: none; }
+
+h3.block { color: white; padding: 9px; padding-right: 30px; margin-bottom: 5px;  }
+h3.block.money { background: #09F; background-image:url(http://www.childsifoundation.org/images/cif/icon_givemoney.png); background-repeat:no-repeat;background-position:right;  }
+h3.block.time { background: #0C6; background-image:url(http://www.childsifoundation.org/images/cif/icon_givetime.png); background-repeat:no-repeat;background-position:right; }
+h3.block.love { background: #F39; background-image:url(http://www.childsifoundation.org/images/cif/icon_givelove.png);background-repeat:no-repeat;background-position:right;}
+
+
+div.hr { height: 90px; background-image:url(http://www.childsifoundation.org/images/cif/dothr.png); background-repeat:repeat-x; background-position: 0% 50%; }
+
+
+.sidebarbox { background-image:url(http://www.childsifoundation.org/images/cif/boxbg.png); margin-bottom: 30px; }
+.sidebarbox .inner { padding:10px; }

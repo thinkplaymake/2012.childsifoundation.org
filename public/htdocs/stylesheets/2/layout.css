@@ -1,0 +1,32 @@
+/** LAYOUT **/
+.page { width: 900px; margin: 0 auto; padding-left: 30px; padding-right: 30px; }
+.row { margin-bottom: 30px; }
+.row.unspaced { margin-bottom: 0; }
+
+.col { display: inline-block; width: 175px; vertical-align: top; }
+.col.w1 { width: 175px; }
+.col.w2 { width: 355px; }
+.col.w3 { width: 535px; }
+.col.w4 { width: 715px; }
+.col.w5 { width: 900px; }
+
+.col.thirds { width: 270px; margin-left:10px; margin-right: 10px; }
+.col.thirds.w2 { width: 600px; margin:0; }
+
+#superfooter {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	margin-top: 60px;
+	background: #695836;
+	padding-top: 35px; 
+	padding-bottom: 35px;
+	margin-top: 100px;
+	color: white;
+}
+#superfooter a { color:white; }
+
+#superfooter .row { width: 900px; margin: 0 auto; }
+#superfooter #legals { margin-right: 100px; }
+#superfooter #quicklinks { width: 200px; padding-top: 55px; }
+#superfooter #madewith { width: 200px; padding-top: 55px; }

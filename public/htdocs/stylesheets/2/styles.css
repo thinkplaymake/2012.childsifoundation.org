@@ -1,0 +1,22 @@
+/** STYLES **/
+body { font-family: sans-serif; font-size: 0.9em; color: #444; }
+p { margin-bottom: 10px; }
+a { font-weight: bold; color: #222; text-decoration: none; border-bottom:1px dotted; }
+strong { font-weight: bold; }
+em { font-weight: bold; color: #CF6517; }
+h1 { font-size: 250%; margin-bottom: 30px; }
+h2 { font-size: 180%; margin-bottom: 20px; }
+h3 { font-size: 120%; margin-bottom: 15px; font-weight: bold; }
+h4 { font-size: 100%; text-transform: uppercase; }
+h5 { font-size: 80%; text-transform: uppercase; }
+.hide { display:none; }
+
+
+@font-face {
+font-family: 'funktion';
+src: url('fonts/Funktion.otf');
+font-weight: normal;
+font-style: normal; }
+
+.headline { font-family: 'funktion'; font-size: 250%; text-align: center; }
+.headline em { font-weight: normal; font-size: 125%; }
